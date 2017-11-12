@@ -84,3 +84,9 @@ gulp.task('default', function (callback) {
     callback
   )
 });
+
+gulp.task('cdn', function () {
+	return gulp.src('app/*.html')
+		.pipe(googlecdn(require('./bower.json')))
+		.pipe(gulp.dest('test'));
+});
