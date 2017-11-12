@@ -45,3 +45,12 @@ gulp.task('useref', function(){
     .pipe(gulpIf('*.css', cssnano()))
     .pipe(gulp.dest('dist'))
 });
+
+gulp.task('images', function(){
+  return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
+  .pipe(imagemin({
+      // Setting interlaced to true
+      interlaced: true
+    }))
+  .pipe(gulp.dest('dist/images'))
+});
