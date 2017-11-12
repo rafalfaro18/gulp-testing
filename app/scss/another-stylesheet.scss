@@ -5,6 +5,16 @@ $text_color: darken(#46EAC2, 30%) ;
   width: percentage(5/7);
 }
 
+$font-family-1: 'BeautyDemo', cursive ;
+
+@font-face {
+  font-family: 'BeautyDemo';
+  src: url('fonts/BeautyDemo.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 p {
   color: $text_color ;
+  font-family: $font-family-1 ;
 }
