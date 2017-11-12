@@ -1,4 +1,10 @@
 // styles.scss
+$text_color: darken(#46EAC2, 30%) ;
+
 .test {
   width: percentage(5/7);
+}
+
+p {
+  color: $text_color ;
 }
