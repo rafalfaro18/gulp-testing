@@ -11,6 +11,7 @@ var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
+var cdnizer = require("gulp-cdnizer");
 
 gulp.task('hello', function() {
   console.log('Hello Zell');
