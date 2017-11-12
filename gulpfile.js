@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
+var useref = require('gulp-useref');
 // Requires the gulp-sass plugin
 var sass = require('gulp-sass');
 
@@ -28,5 +29,5 @@ gulp.task('watch', ['browserSync', 'sass'], function (){
   gulp.watch('app/scss/**/*.scss', ['sass']);
   // Reloads the browser whenever HTML or JS files change
   gulp.watch('app/*.html', browserSync.reload);
-  gulp.watch('app/js/**/*.js', browserSync.reload); 
+  gulp.watch('app/js/**/*.js', browserSync.reload);
 });
