@@ -74,7 +74,7 @@ return cache.clearAll(callback)
 
 gulp.task('build', function (callback) {
   runSequence('clean:dist',
-    ['sass', 'useref', 'images', 'fonts'], 'cdn',
+    ['sass', 'useref', 'images', 'fonts'], 'cdn' ,
     callback
   )
 });
@@ -86,7 +86,7 @@ gulp.task('default', function (callback) {
 });
 
 gulp.task('cdn', function (callback) {
-  gulp.src('app/*.html')
+  gulp.src('dist/*.html')
   .pipe(cdnizer([
     'google:jquery'
   ]))
