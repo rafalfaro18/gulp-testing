@@ -11,6 +11,7 @@ var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
+var googlecdn = require('gulp-google-cdn');
 
 gulp.task('hello', function() {
   console.log('Hello Zell');
