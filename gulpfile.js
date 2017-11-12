@@ -17,3 +17,11 @@ gulp.task('watch', function(){
   gulp.watch('app/scss/**/*.scss', ['sass']);
   // Other watchers
 });
+
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: 'app'
+    },
+  })
+});
