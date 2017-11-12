@@ -85,12 +85,10 @@ gulp.task('default', function (callback) {
   )
 });
 
-gulp.task('test-cdn', function (callback) {
+gulp.task('cdn', function (callback) {
   gulp.src('app/*.html')
-        .pipe(cdnizer([
-                'google:angular',          // for most libraries, that's all you'll need to do!
-                'cdnjs:jquery'
-
-            ]))
-        .pipe(gulp.dest("./test"));
+  .pipe(cdnizer([
+    'cdnjs:jquery'
+  ]))
+  .pipe(gulp.dest("dist"));
 });
