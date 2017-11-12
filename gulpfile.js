@@ -70,3 +70,10 @@ gulp.task('clean:dist', function() {
 gulp.task('cache:clear', function (callback) {
 return cache.clearAll(callback)
 });
+
+gulp.task('build', function (callback) {
+  runSequence('clean:dist',
+    ['sass', 'useref', 'images', 'fonts'],
+    callback
+  )
+});
