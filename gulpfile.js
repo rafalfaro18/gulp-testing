@@ -6,6 +6,7 @@ var sass = require('gulp-sass');
 // Other requires...
 var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
+var cssnano = require('gulp-cssnano');
 
 gulp.task('hello', function() {
   console.log('Hello Zell');
