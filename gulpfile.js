@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var browserSync = require('browser-sync').create();
 // Requires the gulp-sass plugin
 var sass = require('gulp-sass');
 
