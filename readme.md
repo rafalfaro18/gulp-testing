@@ -12,7 +12,7 @@ npm install && bower install
 gulp
 ```
 
-* to compile the project execute:
+* to compile the project into "dist" folder execute:
 ```bash
 gulp build
 ```
