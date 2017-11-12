@@ -1,4 +1,10 @@
 // styles.scss
+$fav_color: #46EAC2;
+
 .testing {
   width: percentage(5/7);
+}
+
+body {
+  background-color: $fav_color ;
 }
