@@ -88,7 +88,7 @@ gulp.task('default', function (callback) {
 gulp.task('cdn', function (callback) {
   gulp.src('app/*.html')
   .pipe(cdnizer([
-    'cdnjs:jquery'
+    'google:jquery'
   ]))
   .pipe(gulp.dest("dist"));
 });
