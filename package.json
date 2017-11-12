@@ -30,6 +30,7 @@
     "run-sequence": "^2.2.0"
   },
   "dependencies": {
-    "google-cdn": "^1.1.0"
+    "google-cdn": "^1.1.0",
+    "google-cdn-data": "^0.1.25"
   }
 }
