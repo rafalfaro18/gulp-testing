@@ -4,7 +4,7 @@ Gulp project for testing and learning based on [https://css-tricks.com/gulp-for-
 
 * inside the project folder run:
 ```bash
-npm install
+npm install && bower install
 ```
 
 * to run the project execute:
