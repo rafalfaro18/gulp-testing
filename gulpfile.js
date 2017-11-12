@@ -3,6 +3,9 @@ var browserSync = require('browser-sync').create();
 var useref = require('gulp-useref');
 // Requires the gulp-sass plugin
 var sass = require('gulp-sass');
+// Other requires...
+var uglify = require('gulp-uglify');
+var gulpIf = require('gulp-if');
 
 gulp.task('hello', function() {
   console.log('Hello Zell');
