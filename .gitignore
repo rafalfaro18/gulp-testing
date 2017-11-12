@@ -25,6 +25,8 @@ coverage
 
 # Bower dependency directory (https://bower.io/)
 bower_components
+
+#app generated files 
 app/bower_components
 
 # node-waf configuration
@@ -57,4 +59,3 @@ typings/
 
 # dotenv environment variables file
 .env
-
