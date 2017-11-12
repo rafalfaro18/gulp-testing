@@ -38,5 +38,7 @@ gulp.task('watch', ['browserSync', 'sass'], function (){
 gulp.task('useref', function(){
   return gulp.src('app/*.html')
     .pipe(useref())
+    // Minifies only if it's a JavaScript file
+    .pipe(gulpIf('*.js', uglify()))
     .pipe(gulp.dest('dist'))
 });
