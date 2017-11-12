@@ -7,6 +7,7 @@ var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
+var imagemin = require('gulp-imagemin');
 
 gulp.task('hello', function() {
   console.log('Hello Zell');
